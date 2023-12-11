@@ -1,0 +1,1 @@
+{"version":3,"file":"firstModule.bundle.js","mappings":"mBAAeA,QAAQC,IAAI,4B","sources":["webpack://restaurant-page/./src/first-module.js"],"sourcesContent":["export default console.log('This is the first module!');"],"names":["console","log"],"sourceRoot":""}
