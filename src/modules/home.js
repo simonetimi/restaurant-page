@@ -25,6 +25,7 @@ export default function loadHome() {
   welcome.appendChild(para2);
 
 
+  //append to the div
   home.appendChild(welcome);
   return home;
 };

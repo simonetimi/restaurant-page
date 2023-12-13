@@ -1,0 +1,58 @@
+.menu {
+    background: linear-gradient(rgba(0, 0, 0, 0.15),
+            rgba(0, 0, 0, 0.15)), url('../images/menu-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    justify-content: center;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+}
+
+.menu-container {
+    background: url('../images/menu-page-bg.jpg');
+    grid-column: 2 / -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 5rem;
+    overflow: scroll;
+}
+
+.menu-items-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+}
+
+.menu-title {
+    grid-column: 2 / -1;
+    grid-column: span 2;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.menu-items-container>div {
+    color: #000;
+    height: 50px;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-items-container>div>h3 {
+    font-size: calc(0.75rem + 0.2vw);
+    text-transform: uppercase;
+    display: inline-block;
+    text-wrap: nowrap;
+}
+
+.menu-items-container>div>p {
+    font-size: calc(0.5rem + 0.2vw);
+    text-align: justify;
+    width: 120%;
+}
