@@ -1,11 +1,16 @@
 import './index.css';
-import loadHome from './modules/home';
-import loadSidebar from './modules/sidebar';
+import loadSidebar from './modules/sidebar.js';
+import loadHome from './modules/home.js';
+import loadMenu from './modules/menu.js';
+import loadButtons from './modules/buttons.js';
 
 if (process.env.NODE_ENV !== 'production') {
   console.log('Looks like we are in development mode!');
 }
 
-//Append to the document body
+const main = document.createElement('main');
+//Append initial load
 document.body.appendChild(loadSidebar());
-document.body.appendChild(loadHome());
+document.body.appendChild(main);
+main.appendChild(loadHome());
+loadButtons();

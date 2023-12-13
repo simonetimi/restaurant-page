@@ -18,7 +18,7 @@ export default function loadSidebar() {
     for (let item of list) {
       const li = document.createElement('li');
       li.textContent = item;
-      li.setAttribute('id', 'list-item-' + counter)
+      li.setAttribute('id', 'list-item-'+ counter);
       ul.appendChild(li);
       counter++;
     }
@@ -30,6 +30,7 @@ export default function loadSidebar() {
   sidebar.appendChild(ul);
   return sidebar
 };
+
 
 
 /* Add image

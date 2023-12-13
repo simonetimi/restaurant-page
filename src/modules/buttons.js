@@ -1,0 +1,40 @@
+import loadHome from "./home";
+import loadMenu from "./menu";
+import loadStory from "./story";
+import loadEvents from "./events";
+import loadContact from "./contact";
+
+export default function loadButtons() {
+    const main = document.querySelector('main');
+
+    //select menu
+    const listContainer = document.querySelector('#side-list');
+    const list = listContainer.querySelectorAll('li');
+    list.forEach((item) => {
+        item.addEventListener('click', switchMain);
+    });
+
+    function switchMain(event) {
+        main.innerHTML = '';
+        const clickedItem = event.currentTarget.id;
+        switch (clickedItem) {
+            case 'list-item-0':
+                main.appendChild(loadHome());
+                break;
+            case 'list-item-1':
+                main.appendChild(loadMenu());
+                break;
+            case 'list-item-2':
+                main.appendChild(loadStory());
+                break;
+            case 'list-item-3':
+                main.appendChild(loadEvents());
+                break;
+            case 'list-item-4':
+                main.appendChild(loadContact());
+                break;
+
+        }
+    }
+
+};

@@ -1,8 +1,8 @@
-import logoImgSrc from '../images/logo-white.png';
+import logoImgSrc from '../images/logo.png';
 
 export default function loadHome() {
   console.log('This is the home module!');
-  const home = document.createElement('main');
+  const home = document.createElement('div');
   home.classList.add('home');
 
   //div
