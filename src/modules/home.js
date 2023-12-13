@@ -1,13 +1,33 @@
-
+import logoImgSrc from '../images/logo-white.png';
 
 export default function loadHome() {
-    console.log('This is the first module!');
-    const element = document.createElement('div');
+  console.log('This is the home module!');
+  const home = document.createElement('main');
+  home.classList.add('home');
 
-    element.classList.add('home');
+  //div
+  const welcome = document.createElement('div');
+  welcome.classList.add('welcome');
+  //logo
+  const logoImg = new Image();
+  logoImg.src = logoImgSrc;
+  logoImg.setAttribute('id', 'logo-img-white')
+  welcome.appendChild(logoImg);
+  //text
+  const para1 = document.createElement('p');
+  para1.textContent = 'Welcome to';
+  const title = document.createElement('h1');
+  title.textContent = 'Los Chicos';
+  const para2 = document.createElement('p');
+  para2.textContent = 'Restaurante Mexicano';
+  welcome.appendChild(para1);
+  welcome.appendChild(title);
+  welcome.appendChild(para2);
 
-    return element;
-  };
+
+  home.appendChild(welcome);
+  return home;
+};
 
 
 /* Add image

@@ -1,13 +1,26 @@
 .home {
   color: red;
-  height: 100vh;
-  width: 60vw;
+  height: 100%;
   font-family: 'Roboto';
   background: url(../assets/img/0311b1ef5e12843332f6.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  grid-area: 1 / 2 / 2 / 3;
+}
+aside {
+    background-color: white;
+    width: 20vw;
+    height: 100vh;
+    grid-area: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
 }
 
+#logo-img {
+    width: 70px;
+}
 
 @font-face {
   font-family: 'Roboto';
@@ -19,6 +32,13 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template: 9fr 1fr / 1fr 3.5fr;
+  height: 100vh;
+  width: 100vw;
 }
 
 /*# sourceMappingURL=index.css.map*/

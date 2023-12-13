@@ -30,7 +30,7 @@ module.exports = merge(common, {
         generator: {
             filename: 'assets/fonts/[hash][ext][query]'
         }
-    },
+    }
     ],
   },
 });

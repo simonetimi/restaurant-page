@@ -1,9 +1,34 @@
 .home {
-  color: red;
-  height: 100vh;
-  width: 60vw;
-  font-family: 'Roboto';
-  background: url('../images/home-bg.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)), url('../images/home-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #000;
+  grid-area: 1 / 2 / 2 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  gap: 0.2rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p {
+
+}
+
+#logo-img-white {
+  padding-bottom: 1rem;
+  width: 90px;
 }

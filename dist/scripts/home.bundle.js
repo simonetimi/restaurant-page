@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkrestaurant_page=self.webpackChunkrestaurant_page||[]).push([[177],{43:(e,s,t)=>{function a(){console.log("This is the first module!");const e=document.createElement("div");return e.classList.add("home"),e}t.d(s,{Z:()=>a})}},e=>{e(e.s=43)}]);
-//# sourceMappingURL=home.bundle.js.map

@@ -4,7 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: {
         index: './src/index.js',
-        home: './src/modules/home.js',
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -22,5 +21,5 @@ module.exports = {
     },
     optimization: {
         runtimeChunk: 'single',
-      },
+      }
 };
