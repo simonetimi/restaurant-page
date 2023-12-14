@@ -1,0 +1,22 @@
+.events {
+    background: linear-gradient(rgba(0, 0, 0, 0.15),
+            rgba(0, 0, 0, 0.15)), url('../images/events-bg.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+    grid-area: 1 / 2 / 2 / 3;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.events-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 60%;
+    height: 70%;
+    border-radius: 16px;
+    color: #FFF;
+    padding: 4rem;
+    overflow: scroll;
+}

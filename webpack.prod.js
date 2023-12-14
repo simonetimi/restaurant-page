@@ -18,19 +18,19 @@ module.exports = merge(common, {
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif|avif)$/i,
         type: 'asset/resource',
         generator: {
-            filename: 'assets/img/[hash][ext][query]'
+          filename: 'assets/images/[hash][ext][query]'
         }
-    },
-    {
+      },
+      {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
         generator: {
-            filename: 'assets/fonts/[hash][ext][query]'
+          filename: 'assets/fonts/[hash][ext][query]'
         }
-    }
+      }
     ],
   },
 });

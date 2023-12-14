@@ -1,8 +1,8 @@
-import loadHome from "./home";
-import loadMenu from "./menu";
-import loadStory from "./story";
-import loadEvents from "./events";
-import loadContact from "./contact";
+import loadHome from "./home.js";
+import loadMenu from "./menu.js";
+import loadStory from "./story.js";
+import loadEvents from "./events.js";
+import loadContact from "./contact.js";
 
 export default function loadButtons() {
     const main = document.querySelector('main');

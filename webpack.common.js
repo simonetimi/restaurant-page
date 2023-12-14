@@ -7,7 +7,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'My Title',
+            title: 'Los Chicos - Mexican Restaurant',
             filename: 'index.html',
             inject: 'head',
             scriptLoading: 'defer',
@@ -21,5 +21,5 @@ module.exports = {
     },
     optimization: {
         runtimeChunk: 'single',
-      }
+    }
 };

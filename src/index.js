@@ -1,7 +1,6 @@
 import './index.css';
 import loadSidebar from './modules/sidebar.js';
 import loadHome from './modules/home.js';
-import loadMenu from './modules/menu.js';
 import loadButtons from './modules/buttons.js';
 
 if (process.env.NODE_ENV !== 'production') {

@@ -1,0 +1,38 @@
+.story {
+    background: linear-gradient(rgba(0, 0, 0, 0.15),
+            rgba(0, 0, 0, 0.15)), url('../images/story-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+    grid-area: 1 / 2 / 2 / 3;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.story-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 60%;
+    height: 70%;
+    border-radius: 16px;
+    color: #FFF;
+    padding: 4rem;
+    overflow: scroll;
+}
+
+.story-container>h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.story-container>p {
+    text-align: justify;
+    font-size: 0.75rem;
+    margin: 1rem 0;
+}
+
+.story-container>h3 {
+    text-align: center;
+    font-size: 0.9rem;
+}
