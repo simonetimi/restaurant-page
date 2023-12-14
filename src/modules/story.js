@@ -29,13 +29,6 @@ export default function loadStory() {
     Come, join us at Los Chicos for a meal, a drink, or a celebration.Indulge in flavors that transport you to the heart of Mexico, in an atmosphere that’s both welcoming and exhilarating. Whether it’s a family dinner, a night out with friends, or a quick lunch break, we promise an experience that’s vibrant, delicious, and authentically Mexican.`;
     storyEnd.textContent = `Bienvenidos a Los Chicos - where every meal is a celebration of Mexican culture and hospitality!`;
 
-
-
-
-
-
-
-
     story.appendChild(storyContainer);
     return story;
 };

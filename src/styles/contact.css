@@ -1,0 +1,61 @@
+.contact {
+    background: linear-gradient(rgba(0, 0, 0, 0.15),
+            rgba(0, 0, 0, 0.15)), url('../images/contact-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+    grid-area: 1 / 2 / 2 / 3;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 60%;
+    height: 70%;
+    border-radius: 16px;
+    color: #FFF;
+    padding: 4rem;
+    overflow: scroll;
+}
+
+#map {
+    width: 60%;
+    border-radius: 6px;
+    margin-top: 0.8rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.contact-container>h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-container>p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.contact-container>div {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-container>div>p {
+    font-size: .8rem;
+}
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
